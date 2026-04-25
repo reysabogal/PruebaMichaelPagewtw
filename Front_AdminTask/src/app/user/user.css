@@ -1,0 +1,61 @@
+.user-page {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  color: #000;
+}
+
+.user-page h1,
+.user-page th,
+.user-page td,
+.user-page .mat-mdc-paginator,
+.user-page .mdc-text-field,
+.user-page .mdc-floating-label,
+.user-page .mat-mdc-form-field-input-control,
+.user-page .mat-mdc-select-value,
+.user-page .mat-mdc-icon-button,
+.user-page .mat-icon {
+  color: #000 !important;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.search-field {
+  min-width: 280px;
+}
+
+.table-wrapper {
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.user-table {
+  width: 100%;
+}
+
+.actions-cell {
+  width: 120px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .user-page {
+    padding: 1rem;
+  }
+
+  .header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .header button,
+  .search-field {
+    width: 100%;
+  }
+}

@@ -1,0 +1,76 @@
+<section class="task-page">
+  <div class="header">
+    <h1>Lista de Tareas</h1>
+    <button mat-raised-button color="primary" type="button" (click)="createTask()">
+      Nueva Tarea
+    </button>
+
+    <mat-form-field appearance="outline" class="search-field">
+      <mat-label>Buscar por Titulo</mat-label>
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="searchTitle"
+        (input)="applyTitleFilter()"
+      />
+      @if (searchTitle) {
+        <button
+          matSuffix
+          mat-icon-button
+          type="button"
+          aria-label="Limpiar busqueda"
+          (click)="searchTitle = ''; applyTitleFilter()"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      }
+    </mat-form-field>
+  </div>
+
+  <div class="table-wrapper mat-elevation-z2">
+    <table mat-table [dataSource]="dataSource" class="task-table">
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef>Titulo</th>
+        <td mat-cell *matCellDef="let task">{{ task.title }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef>Descripcion</th>
+        <td mat-cell *matCellDef="let task">{{ task.description }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="user">
+        <th mat-header-cell *matHeaderCellDef>Usuario</th>
+        <td mat-cell *matCellDef="let task">{{ task.userName }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef>Estado</th>
+        <td mat-cell *matCellDef="let task">{{ task.status }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Acciones</th>
+        <td mat-cell *matCellDef="let task" class="actions-cell">
+          <button
+            mat-icon-button
+            type="button"
+            aria-label="Cambiar estado de la tarea"
+            (click)="changeStatus(task)"
+          >
+            <mat-icon>sync_alt</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <mat-paginator      
+      [pageSizeOptions]="[5, 10, 20]"
+      showFirstLastButtons
+      aria-label="Paginacion de tareas"
+    />
+  </div>
+</section>

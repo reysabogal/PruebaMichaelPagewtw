@@ -1,0 +1,280 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\services\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\services\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\services\\itasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\services\\itasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\dtos\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\dtos\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\services\\usersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\services\\usersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\services\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\services\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\back_admintask.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\back_admintask.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\models\\admintaskcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\models\\admintaskcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|c:\\users\\usuario\\my drive (proyectos.portales26@gmail.com) (1)\\fuentes\\c#\\prueba_michael\\back_admintask\\back_admintask\\back_admintask\\dtos\\updatetaskstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2854841F-3260-4CAE-95E2-95F36B0E663C}|Back_AdminTask\\Back_AdminTask.csproj|solutionrelative:back_admintask\\dtos\\updatetaskstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 251,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Back_AdminTask\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAkwDQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T19:35:28.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaskDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\DTOs\\TaskDTO.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\DTOs\\TaskDTO.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\DTOs\\TaskDTO.cs",
+              "RelativeToolTip": "Back_AdminTask\\DTOs\\TaskDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T19:21:40.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\DTOs\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "Back_AdminTask\\DTOs\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T19:21:31.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TasksService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Services\\TasksService.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\Services\\TasksService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Services\\TasksService.cs",
+              "RelativeToolTip": "Back_AdminTask\\Services\\TasksService.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAiwHMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T19:19:41.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ITasksService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Services\\ITasksService.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\Services\\ITasksService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Services\\ITasksService.cs",
+              "RelativeToolTip": "Back_AdminTask\\Services\\ITasksService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswBsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T19:19:35.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsersService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Services\\UsersService.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\Services\\UsersService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Services\\UsersService.cs",
+              "RelativeToolTip": "Back_AdminTask\\Services\\UsersService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAArwFoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T17:50:51.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUsersService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Services\\IUsersService.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\Services\\IUsersService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Services\\IUsersService.cs",
+              "RelativeToolTip": "Back_AdminTask\\Services\\IUsersService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T17:50:47.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "Back_AdminTask\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T16:34:50.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\appsettings.json",
+              "RelativeDocumentMoniker": "Back_AdminTask\\appsettings.json",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\appsettings.json",
+              "RelativeToolTip": "Back_AdminTask\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-24T16:36:09.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Back_AdminTask.csproj",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask.csproj",
+              "RelativeDocumentMoniker": "Back_AdminTask\\Back_AdminTask.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask.csproj",
+              "RelativeToolTip": "Back_AdminTask\\Back_AdminTask.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-24T16:34:42.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Program.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Program.cs",
+              "RelativeToolTip": "Back_AdminTask\\Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwDsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T16:23:37.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\Controllers\\TasksController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "Back_AdminTask\\Controllers\\TasksController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAiwFkAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T19:35:36.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UpdateTaskStatusDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\DTOs\\UpdateTaskStatusDTO.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\DTOs\\UpdateTaskStatusDTO.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\DTOs\\UpdateTaskStatusDTO.cs",
+              "RelativeToolTip": "Back_AdminTask\\DTOs\\UpdateTaskStatusDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T12:37:20.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdminTaskContext.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Models\\AdminTaskContext.cs",
+              "RelativeDocumentMoniker": "Back_AdminTask\\Models\\AdminTaskContext.cs",
+              "ToolTip": "C:\\Users\\Usuario\\My Drive (proyectos.portales26@gmail.com) (1)\\Fuentes\\C#\\prueba_michael\\Back_AdminTask\\Back_AdminTask\\Back_AdminTask\\Models\\AdminTaskContext.cs",
+              "RelativeToolTip": "Back_AdminTask\\Models\\AdminTaskContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T16:23:04.563Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

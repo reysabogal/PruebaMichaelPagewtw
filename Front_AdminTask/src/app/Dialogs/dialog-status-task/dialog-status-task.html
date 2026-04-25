@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>Cambiar estado Tarea</h2>
+
+<mat-dialog-content>
+  <p><strong>Tarea:</strong> {{ data.title }}</p>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Estado</mat-label>
+    <mat-select [(ngModel)]="selectedStatus" name="status">
+      @for (status of statusOptions; track status) {
+        <mat-option [value]="status">{{ status }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  @if (errorMessage) {
+    <p class="error-message">{{ errorMessage }}</p>
+  }
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-stroked-button type="button" (click)="closeDialog()">Volver</button>
+  <button mat-raised-button color="primary" type="button" (click)="updateStatus()">
+    Actualizar
+  </button>
+</mat-dialog-actions>

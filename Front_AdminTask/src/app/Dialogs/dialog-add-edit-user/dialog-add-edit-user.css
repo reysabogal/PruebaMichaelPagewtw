@@ -1,0 +1,16 @@
+.user-form {
+  display: grid;
+  gap: 1rem;
+  min-width: 320px;
+  padding-top: 0.5rem;
+}
+
+.user-form mat-form-field {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .user-form {
+    min-width: auto;
+  }
+}

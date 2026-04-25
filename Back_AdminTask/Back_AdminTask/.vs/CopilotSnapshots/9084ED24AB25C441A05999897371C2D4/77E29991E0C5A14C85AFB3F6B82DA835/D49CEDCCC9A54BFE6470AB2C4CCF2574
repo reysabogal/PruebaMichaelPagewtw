@@ -1,0 +1,19 @@
+﻿using AutoMapper;
+using Back_AdminTask.Models;
+using Back_AdminTask.DTOs;
+using TaskModel = Back_AdminTask.Models.Task;
+
+namespace Back_AdminTask.Mapping
+{
+    public class MappingProfile : Profile
+    {
+        public MappingProfile()
+        {
+            // User mappings
+            CreateMap<User, UserDTO>().ReverseMap();
+
+            // Task mappings
+            CreateMap<TaskModel, TaskDTO>().ReverseMap();
+        }
+    }
+}

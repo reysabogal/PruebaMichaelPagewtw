@@ -1,0 +1,16 @@
+.task-form {
+  display: grid;
+  gap: 1rem;
+  min-width: 340px;
+  padding-top: 0.5rem;
+}
+
+.task-form mat-form-field {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .task-form {
+    min-width: auto;
+  }
+}

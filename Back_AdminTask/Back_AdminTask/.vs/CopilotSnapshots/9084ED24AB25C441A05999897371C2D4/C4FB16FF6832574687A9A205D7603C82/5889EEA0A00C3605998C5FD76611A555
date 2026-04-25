@@ -1,0 +1,29 @@
+﻿using Back_AdminTask.Models;
+using Back_AdminTask.Enums;
+using Task = Back_AdminTask.Models.Task;
+
+namespace Back_AdminTask.Services
+{
+    public interface ITasksService
+    {
+        /// <summary>
+        /// Obtiene todas las tareas
+        /// </summary>
+        Task<List<Task>> GetAllTasksAsync();
+
+        /// <summary>
+        /// Crea una nueva tarea con estado Pending por defecto
+        /// </summary>
+        Task<Task> CreateTaskAsync(string title, string? description, int userId);
+
+        /// <summary>
+        /// Edita los campos Title, Description y UserId de una tarea existente
+        /// </summary>
+        Task<Task?> UpdateTaskAsync(int id, string title, string? description, int userId);
+
+        /// <summary>
+        /// Cambia el estado de una tarea
+        /// </summary>
+        Task<Task?> ChangeTaskStatusAsync(int id, TaskStatus status);
+    }
+}

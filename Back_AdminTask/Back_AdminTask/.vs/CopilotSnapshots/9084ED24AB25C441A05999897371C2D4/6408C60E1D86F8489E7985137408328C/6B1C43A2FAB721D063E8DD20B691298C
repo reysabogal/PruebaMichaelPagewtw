@@ -1,0 +1,13 @@
+﻿using AutoMapper;
+
+namespace Back_AdminTask.Mapping
+{
+    public class MappingProfile : Profile
+    {
+        public MappingProfile()
+        {
+            // Aquí irán tus mapeos
+            // Ejemplo: CreateMap<Source, Destination>();
+        }
+    }
+}

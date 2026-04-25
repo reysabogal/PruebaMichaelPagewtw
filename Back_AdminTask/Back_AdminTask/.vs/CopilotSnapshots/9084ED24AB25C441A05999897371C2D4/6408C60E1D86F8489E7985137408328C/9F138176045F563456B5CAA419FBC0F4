@@ -1,0 +1,28 @@
+﻿using AutoMapper;
+using Back_AdminTask.Models;
+using Back_AdminTask.DTOs;
+using TaskModel = Back_AdminTask.Models.Task;
+
+namespace Back_AdminTask.Mapping
+{
+    public class MappingProfile : Profile
+    {
+        public MappingProfile()
+        {
+            // User mappings
+            CreateMap<User, UserDTO>().ReverseMap();
+            CreateMap<CreateUserDTO, User>();
+            CreateMap<UpdateUserDTO, User>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
+
+            // Task mappings
+            CreateMap<TaskModel, TaskDTO>().ReverseMap();
+            CreateMap<CreateTaskDTO, TaskModel>();
+            CreateMap<UpdateTaskDTO, TaskModel>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ForMember(dest => dest.CreatedAt, opt => opt.Ignore())
+                .ForMember(dest => dest.Status, opt => opt.Ignore())
+                .ForMember(dest => dest.AdditionalData, opt => opt.Ignore());
+        }
+    }
+}

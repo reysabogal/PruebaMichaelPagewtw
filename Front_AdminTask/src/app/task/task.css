@@ -1,0 +1,60 @@
+.task-page {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.search-field {
+  min-width: 280px;
+}
+
+.table-wrapper {
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.task-table {
+  width: 100%;
+}
+
+.task-page h1,
+.task-page th,
+.task-page td,
+.task-page .mat-mdc-paginator,
+.task-page .mdc-text-field,
+.task-page .mdc-floating-label,
+.task-page .mat-mdc-form-field-input-control,
+.task-page .mat-mdc-icon-button,
+.task-page .mat-icon {
+  color: #000 !important;
+}
+
+.actions-cell {
+  width: 120px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .task-page {
+    padding: 1rem;
+  }
+
+  .header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .header button,
+  .search-field {
+    width: 100%;
+  }
+}

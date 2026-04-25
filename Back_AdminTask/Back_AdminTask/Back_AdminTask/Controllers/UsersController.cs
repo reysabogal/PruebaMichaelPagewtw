@@ -1,0 +1,106 @@
+using AutoMapper;
+using Back_AdminTask.DTOs;
+using Back_AdminTask.Models;
+using Back_AdminTask.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Back_AdminTask.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class UsersController : ControllerBase
+    {
+        private readonly IUsersService _usersService;
+        private readonly IMapper _mapper;
+
+        public UsersController(IUsersService usersService, IMapper mapper)
+        {
+            _usersService = usersService;
+            _mapper = mapper;
+        }
+
+        /// <summary>
+        /// Obtiene todos los usuarios
+        /// </summary>
+        [HttpGet]
+        public async Task<ActionResult<List<UserDTO>>> GetAllUsers()
+        {
+            var users = await _usersService.GetAllUsersAsync();
+            return Ok(_mapper.Map<List<UserDTO>>(users));
+        }
+
+        /// <summary>
+        /// Busca un usuario por nombre
+        /// </summary>
+        [HttpGet("by-name/{name}")]
+        public async Task<ActionResult<UserDTO>> GetUserByName(string name)
+        {
+            var user = await _usersService.GetUserByNameAsync(name);
+            if (user == null)
+            {
+                return NotFound(new { message = $"Usuario con nombre '{name}' no encontrado." });
+            }
+            return Ok(_mapper.Map<UserDTO>(user));
+        }
+
+        /// <summary>
+        /// Crea un nuevo usuario
+        /// </summary>
+        [HttpPost]
+        public async Task<ActionResult<UserDTO>> CreateUser(UserDTO userDTO)
+        {
+            var user = _mapper.Map<User>(userDTO);
+            var createdUser = await _usersService.CreateUserAsync(user);
+            return CreatedAtAction(nameof(GetAllUsers), _mapper.Map<UserDTO>(createdUser));
+        }
+
+        /// <summary>
+        /// Edita un usuario existente
+        /// </summary>
+        [HttpPut("{id}")]
+        public async Task<ActionResult<UserDTO>> UpdateUser(int id, UserDTO userDTO)
+        {
+            var updatedUser = await _usersService.UpdateUserAsync(id, userDTO.Name, userDTO.Email);
+            if (updatedUser == null)
+            {
+                return NotFound(new { message = $"Usuario con Id {id} no encontrado." });
+            }
+            return Ok(_mapper.Map<UserDTO>(updatedUser));
+        }
+
+        /// <summary>
+        /// Elimina un usuario por Id
+        /// </summary>
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteUser(int id)
+        {
+            try
+            {
+                var result = await _usersService.DeleteUserAsync(id);
+                if (!result)
+                {
+                    return NotFound(new { message = $"Usuario con Id {id} no encontrado." });
+                }
+                return NoContent();
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Obtiene el nombre del usuario por su Id
+        /// </summary>
+        [HttpGet("name/{id}")]
+        public async Task<ActionResult<object>> GetUserNameById(int id)
+        {
+            var userName = await _usersService.GetUserNameByIdAsync(id);
+            if (userName == null)
+            {
+                return NotFound(new { message = $"Usuario con Id {id} no encontrado." });
+            }
+            return Ok(new { id = id, name = userName });
+        }
+    }
+}

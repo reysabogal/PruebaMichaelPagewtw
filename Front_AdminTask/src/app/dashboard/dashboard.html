@@ -1,0 +1,26 @@
+<!-- src/app/dashboard/dashboard.component.html -->
+<div class="dashboard-layout">
+
+  <!-- MENÚ IZQUIERDO -->
+  <nav class="sidebar">
+    <h2 class="sidebar-title">Gestión de tareas</h2>
+
+    <button
+      routerLink="tareas"
+      routerLinkActive="active">
+      📋 Tareas
+    </button>
+
+    <button
+      routerLink="usuarios"
+      routerLinkActive="active">
+      👤 Usuarios
+    </button>
+  </nav>
+
+  <!-- CONTENIDO DERECHO: aquí se renderizan los hijos -->
+  <main class="content">
+    <router-outlet />
+  </main>
+
+</div>

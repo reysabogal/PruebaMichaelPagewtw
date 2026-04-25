@@ -1,0 +1,40 @@
+<h2 mat-dialog-title>Nueva tarea</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="taskForm" class="task-form">
+    <mat-form-field appearance="outline">
+      <mat-label>Titulo</mat-label>
+      <input matInput formControlName="title" type="text" />
+      @if (taskForm.controls.title.touched && taskForm.controls.title.hasError('required')) {
+        <mat-error>El titulo es obligatorio.</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Descripcion</mat-label>
+      <textarea matInput formControlName="description" rows="4"></textarea>
+      @if (
+        taskForm.controls.description.touched && taskForm.controls.description.hasError('required')
+      ) {
+        <mat-error>La descripcion es obligatoria.</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Usuario</mat-label>
+      <mat-select formControlName="userId" (selectionChange)="onUserSelection($event)">
+        @for (user of users; track user.id) {
+          <mat-option [value]="user.id">{{ user.name }}-{{ user.id }}</mat-option>
+        }
+      </mat-select>
+      @if (taskForm.controls.userId.touched && taskForm.controls.userId.hasError('required')) {
+        <mat-error>Debes seleccionar un usuario.</mat-error>
+      }
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-stroked-button type="button" (click)="closeDialog()">Volver</button>
+  <button mat-raised-button color="primary" type="button" (click)="addTask()">Guardar</button>
+</mat-dialog-actions>

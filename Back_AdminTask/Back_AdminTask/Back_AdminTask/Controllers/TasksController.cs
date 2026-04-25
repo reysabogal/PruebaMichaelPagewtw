@@ -1,0 +1,103 @@
+using AutoMapper;
+using Back_AdminTask.DTOs;
+using Back_AdminTask.Enums;
+using Back_AdminTask.Services;
+using Microsoft.AspNetCore.Mvc;
+using TaskModel = Back_AdminTask.Models.Task;
+using TaskStatusEnum = Back_AdminTask.Enums.TaskStatus;
+
+namespace Back_AdminTask.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class TasksController : ControllerBase
+    {
+        private readonly ITasksService _tasksService;
+        private readonly IMapper _mapper;
+
+        public TasksController(ITasksService tasksService, IMapper mapper)
+        {
+            _tasksService = tasksService;
+            _mapper = mapper;
+        }
+
+        /// <summary>
+        /// Obtiene todas las tareas
+        /// </summary>
+        [HttpGet]
+        public async Task<ActionResult<List<TaskDTO>>> GetAllTasks()
+        {
+            var tasks = await _tasksService.GetAllTasksAsync();
+            return Ok(_mapper.Map<List<TaskDTO>>(tasks));
+        }
+
+        /// <summary>
+        /// Crea una nueva tarea con estado Pending
+        /// </summary>
+        [HttpPost]
+        public async Task<ActionResult<TaskDTO>> CreateTask(TaskDTO taskDTO)
+        {
+            try
+            {
+                var createdTask = await _tasksService.CreateTaskAsync(
+                    taskDTO.Title,
+                    taskDTO.Description,
+                    taskDTO.UserId,
+                    taskDTO.AdditionalData
+                );
+                return CreatedAtAction(nameof(GetAllTasks), _mapper.Map<TaskDTO>(createdTask));
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Edita una tarea existente (Title, Description, UserId)
+        /// </summary>
+        [HttpPut("{id}")]
+        public async Task<ActionResult<TaskDTO>> UpdateTask(int id, TaskDTO taskDTO)
+        {
+            try
+            {
+                var updatedTask = await _tasksService.UpdateTaskAsync(
+                    id,
+                    taskDTO.Title,
+                    taskDTO.Description,
+                    taskDTO.UserId
+                );
+                if (updatedTask == null)
+                {
+                    return NotFound(new { message = $"Tarea con Id {id} no encontrada." });
+                }
+                return Ok(_mapper.Map<TaskDTO>(updatedTask));
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Cambia el estado de una tarea
+        /// </summary>
+        [HttpPut("{id}/status")]
+        public async Task<ActionResult<TaskDTO>> ChangeTaskStatus(int id, [FromBody] string status)
+        {
+            try
+            {
+                var updatedTask = await _tasksService.ChangeTaskStatusAsync(id, status);
+                if (updatedTask == null)
+                {
+                    return NotFound(new { message = $"Tarea con Id {id} no encontrada." });
+                }
+                return Ok(_mapper.Map<TaskDTO>(updatedTask));
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+﻿using Back_AdminTask.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace Back_AdminTask.Services
+{
+    public class UsersService : IUsersService
+    {
+        private readonly AdminTaskContext _context;
+
+        public UsersService(AdminTaskContext context)
+        {
+            _context = context;
+        }
+
+        /// <summary>
+        /// Obtiene todos los usuarios de la base de datos
+        /// </summary>
+        public async Task<List<User>> GetAllUsersAsync()
+        {
+            return await _context.Users.ToListAsync();
+        }
+
+        /// <summary>
+        /// Busca un usuario por nombre
+        /// </summary>
+        public async Task<User?> GetUserByNameAsync(string name)
+        {
+            return await _context.Users
+                .FirstOrDefaultAsync(u => u.Name == name);
+        }
+
+        /// <summary>
+        /// Crea un nuevo usuario
+        /// </summary>
+        public async Task<User> CreateUserAsync(User user)
+        {
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+            return user;
+        }
+
+        /// <summary>
+        /// Edita los campos Name y Email de un usuario existente
+        /// </summary>
+        public async Task<User?> UpdateUserAsync(int id, string name, string email)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return null;
+            }
+
+            user.Name = name;
+            user.Email = email;
+
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+            return user;
+        }
+
+        /// <summary>
+        /// Elimina un usuario por Id
+        /// </summary>
+        public async Task<bool> DeleteUserAsync(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return false;
+            }
+
+            // Validar que el usuario no tiene tareas asociadas
+            var userHasTasks = await _context.Tasks.AnyAsync(t => t.UserId == id);
+            if (userHasTasks)
+            {
+                throw new InvalidOperationException($"No se puede eliminar el usuario porque tiene asociada una o más tareas.");
+                return false;
+            }
+
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        /// <summary>
+        /// Obtiene el nombre del usuario por su Id
+        /// </summary>
+        public async Task<string?> GetUserNameByIdAsync(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            return user?.Name;
+        }
+    }
+}
